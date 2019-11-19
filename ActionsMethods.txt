@@ -1,0 +1,100 @@
+ Actions ac=new Actions(webdriverobject);
+
+// To click on the element
+ac.moveToElement(element).click().perform();
+
+Note: We need to use perform() to execute the action.
+
+Method :clickAndHold()
+Purpose: Clicks without releasing the current leftmouse location
+
+Method : contextClick()
+Purpose: Performs a Right-click at the current mouse location.
+
+Method: doubleClick()
+Purpose: Performs a double click at the current leftmouse location
+
+Method: release()
+Purpose: It releases the left mouse button at the current mouse location.
+
+Method: dragAndDrop(source,target)
+Parameters: Source and Target
+Purpose: Performs click and hold at the location of the source element and moves to the location of the target element then releases the mouse.
+
+Method: dragAndDropBy(source,x-offset,y-offset)
+Parameters: Source, xOffset - horizontal move, y-Offset - vertical move Offset
+Purpose: Performs click and hold at the location of the source element moves by a given off set, then releases the mouse.
+
+
+
+Key strokes Methods
+
+
+Method: keyDown(modifier_key)
+Parameters: Modifier_key (keys.ALT or Keys.SHIFT or Keys.CONTROL)
+Purpose: Performs a modifier key press, doesn't release the modifier key.key will be pressed down.
+
+Method: keyUp(modifier_key)
+Parameters: Modifier_key (keys.ALT or Keys.SHIFT or Keys.CONTROL)
+Purpose: Performs a key release.
+
+Purpose: It sends a series of keyStrokes onto the element
+Method: sendKeys (onElement, charSequence)
+
+to press down arrow key
+ac.sendKeys(Keys.ARROW_DOWN).build().perform();
+
+to press up arrow key
+ac.sendKeys(Keys.ARROW_UP).build().perform();
+ 
+to press left arrow key
+ac.sendKeys(Keys.ARROW_LEFT).build().perform();
+ 
+to press Right arrow key
+ac.sendKeys(Keys.ARROW_RIGHT).build().perform(); 
+
+to press tab key to move to next element
+ac.sendKeys(Keys.TAB).build().perform();    
+
+to press pagedown key
+ac.sendKeys(Keys.PAGE_DOWN).build().perform(); 
+
+Keys.ENTER—To press enter key 
+
+to press pageup key
+ac.sendKeys(Keys.PAGE_UP).build().perform();
+
+to press escape key in keyboard
+
+ac.sendKeys(Keys.ESCAPE).build().perform();       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
